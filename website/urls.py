@@ -17,14 +17,11 @@ from django.contrib import admin
 from django.urls import include, path
 
 from pages.views import home_view, about_view, login_view
-from inventory.views import item_detail_view, item_create_view#,item_dynamic_view
+from inventory.views import item_detail_view, item_create_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_view, name='home'),
     path('about/', about_view, name='about'),
     path('login/', login_view, name='login'),
-    
-    path('inventory/', item_detail_view),
-    path('create/', item_create_view),
-    #path('inventory/<int:id_lookup>', item_dynamic_view),
+    path('', include('inventory.urls')),
 ]
