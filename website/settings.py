@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     #own apps
     'inventory',
     'pages',
-    'register',
+    'register'
 ]
 
 MIDDLEWARE = [
@@ -125,7 +125,8 @@ USE_TZ = True
 #MEDIA_URL = 
 
 STATIC_URL = '/static/'
-
-staticfiles_DIR = {
-    os.path.join(BASE_DIR, 'static')
-}
+STATIC_ROOT = ''
+STATICFILES_DIR = [
+    os.path.join(BASE_DIR, 'static'),
+    'C:/Users/Miguel S/OverheadInventory/website'
+]

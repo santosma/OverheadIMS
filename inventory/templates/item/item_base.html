@@ -3,15 +3,11 @@
 {% block content %}
 	<ul class="list-group list-group-flush">
 		{% if items %}
-			{% if single %}
+			{% for item in items %}
 				{% include 'item/detail.html' %}
-			
-			{% else %}
-				{% for item in items %}
-					{% include 'item/detail.html' %}
-				{% endfor %}
-			{% endif %}
-
+			{% endfor %}
+		{% elif item %}
+			{% include 'item/detail.html' %}
 		{% else %}
 				<h1>No items in database</h1>
 		{% endif %}

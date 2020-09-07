@@ -10,4 +10,3 @@ class ItemLocationForm(forms.ModelForm):
 			'loc',
 			'qty'
 		]
-			
