@@ -9,7 +9,7 @@ def item_detail_view(request):
 		'items' : items_list,
 		'item' : None
 	}
-	return render(request,"item/item_base.html", context)
+	return render(request,"inventory/item_base.html", context)
 
 
 def item_create_view(request):
@@ -21,7 +21,7 @@ def item_create_view(request):
 	context = {
 		'form' : form,
 	}
-	return render(request, "item/create.html", context)
+	return render(request, "inventory/create.html", context)
 
 
 def item_dynamic_view(request,id_lookup):
@@ -31,6 +31,6 @@ def item_dynamic_view(request,id_lookup):
 		'item': item_single,
 		'items' : None
 	}
-	return render(request, "item/item_base.html", context)
+	return render(request, "inventory/item_base.html", context)
 	
 

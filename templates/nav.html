@@ -1,12 +1,3 @@
-<!--<nav>
-	<ul>
-		<li><a href="{% url 'home' %}">home</a></li>
-		<li><a href="{% url 'login' %}">login</a></li>
-		<li><a href="{% url 'about' %}">about</a></li>
-	</ul>
-
-</nav>
--->
 
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #f96300;">
 	<a class="navbar-brand" href="{% url 'home' %}">Upload</a>
@@ -15,8 +6,9 @@
 	</button>
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		<div class="navbar-nav">
-		<a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
-		<a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+		<a class="nav-item nav-link" href="{% url 'login' %}">				login	</a>
+		<a class="nav-item nav-link" href="{% url 'about' %}">				about 	</a>
+		<a class="nav-item nav-link" href="{% url 'inventory:create' %}">				create 	</a>
 		</div>
 	</div>
 </nav>
