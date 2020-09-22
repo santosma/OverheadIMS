@@ -6,9 +6,10 @@
 	</button>
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		<div class="navbar-nav">
-		<a class="nav-item nav-link" href="{% url 'login' %}">				login	</a>
-		<a class="nav-item nav-link" href="{% url 'about' %}">				about 	</a>
-		<a class="nav-item nav-link" href="{% url 'inventory:create' %}">				create 	</a>
+		<a class="nav-item nav-link" href="{% url 'login' %}">				Login	</a>
+		<a class="nav-item nav-link" href="{% url 'about' %}">				About 	</a>
+		<a class="nav-item nav-link" href="{% url 'inventory:create' %}">	Add 	</a>
+		<a class="nav-item nav-link" href="{% url 'inventory:all-items'%}"> All		</a>
 		</div>
 	</div>
 </nav>
