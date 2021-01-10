@@ -1,12 +1,5 @@
-body{
-	background-color: #f5f5e4;
+body {
+	background-color: lightblue;
 	font-family: Arial;
 	color: red;
-}
-
-.footer {
-  position: relative;
-  height: 150px;
-  clear:both;
-  padding-top:20px;
 }

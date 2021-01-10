@@ -27,6 +27,7 @@ urlpatterns = [
     path('', home_view, name='home'),
     path('about/', about_view, name='about'),
     path('login/', login_view, name='login'),
+    path('uploader/', include('ocrreader.urls')),
     path('inventory/', include('inventory.urls')),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] 
  
