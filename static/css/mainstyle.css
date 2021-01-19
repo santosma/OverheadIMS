@@ -1,5 +1,10 @@
-body {
-	background-color: lightblue;
-	font-family: Arial;
-	color: red;
+:root {
+	--workplace-color: #f96300;
 }
+
+body {
+	font-family: Arial;
+	color: var(--workplace-color);
+	padding-top: 60px
+}
+

@@ -1,16 +1,35 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #f96300;">
+	<div class="container">
+	  <a class="navbar-brand" href="{% url 'home' %}">Home</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
 
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #f96300;">
-	<a class="navbar-brand" href="{% url 'home' %}">Home</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-	<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		<div class="navbar-nav">
-			<a class="nav-item nav-link" href="{% url 'ocrreader:upload' %}">	Upload 	</a>
-			<a class="nav-item nav-link" href="{% url 'login' %}">				Login	</a>
-			<a class="nav-item nav-link" href="{% url 'about' %}">				About 	</a>
-			<a class="nav-item nav-link" href="{% url 'inventory:all-items'%}"> All		</a>
-			<a class="nav-item nav-link" href="{% url 'inventory:create' %}">	Add 	</a>
-		</div>
+	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-item nav-link" href="{% url 'about' %}"> About </a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-item nav-link" href="{% url 'inventory:all-items'%}"> Current stock </a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-item nav-link" href="{% url 'ocrreader:upload' %}"> Upload </a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Actions
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	      		<a class="dropdown-item" href="{% url 'inventory:create'%}">Inventory</a>
+	          	<a class="dropdown-item" href="#">Update Inventory</a>
+	          	<a class="dropdown-item" href="#">New Item</a>
+	        </div>
+	      </li>
+	    </ul>
+	    <ul class="navbar-nav">
+	    	<a class="nav-item nav-link ml-" href="#">Login</a>
+		</ul>
+	  </div>
 	</div>
 </nav>

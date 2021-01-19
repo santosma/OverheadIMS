@@ -128,9 +128,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = ''
-STATICFILES_DIR = [
-    os.path.join(BASE_DIR, 'static'),
-    'C:/Users/Miguel S/OverheadInventory/website/static'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
 ]
 
 MEDIA_ROOT =  os.path.join(BASE_DIR, 'media') 
