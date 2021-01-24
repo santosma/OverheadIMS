@@ -20,7 +20,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from pages.views import home_view, about_view, login_view
-from inventory.views import item_detail_view, item_create_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,5 +28,6 @@ urlpatterns = [
     path('login/', login_view, name='login'),
     path('uploader/', include('ocrreader.urls')),
     path('inventory/', include('inventory.urls')),
+    path('account/',include('accounts.urls')),
 ] 
  
