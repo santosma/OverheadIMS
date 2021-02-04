@@ -1,13 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<p>
 	<form method="POST" enctype="multipart/form-data"> 
 		{% csrf_token %} 
 		{{ form.as_p }}
-		<input type='submit' value='read'/>
+		<div style="margin-top: 60px"><input type='submit' class="btn btn-outline-success" value='Upload'/></div>
+		
 	</form>
-
-	{% if parsed_text %}
-		{{ parsed_text }}
-	{% endif %}
+	<div style="margin-top: 60px">
+		{% if parsed_text %}
+			{{ parsed_text }}
+		{% endif %}
+	</div>
+</p>
 {% endblock %}

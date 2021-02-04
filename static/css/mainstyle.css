@@ -6,5 +6,26 @@ body {
 	font-family: Arial;
 	color: var(--workplace-color);
 	padding-top: 60px
+	height: 100%;
 }
 
+.user_card {
+	width: 500px;
+	margin-top: auto;
+	margin-bottom: auto;
+	background: var(--workplace-color);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+
+}
+
+.login_container {
+	padding: 0 2rem;
+}

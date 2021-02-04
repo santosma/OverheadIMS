@@ -26,7 +26,6 @@ def item_create_view(request):
 
 def item_dynamic_view(request,id_lookup):
 	item_single = get_object_or_404(ItemLocation, id=id_lookup)
-	single_flag = True
 	context = {
 		'item': item_single,
 		'items' : None
