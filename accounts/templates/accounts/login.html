@@ -1,3 +1,31 @@
-<h3>
-	login
-</h3>
+{% extends './account_template.html' %}
+{% load static %}
+{% block account_form %}
+		<form method="POST" action="">
+			{% csrf_token %}
+			<div class="input-group mb-3">
+				<div class="input-group-append">
+					<span class="input-group-text"><i class="far fa-user"></i></span>
+				</div>
+				{{form.username}}
+			</div>
+			<div class="input-group mb-3">
+				<div class="input-group-append">
+					<span class="input-group-text"><i class="fas fa-key"></i></span>
+				</div>
+				{{form.password1}}
+			</div>
+
+	   		<div class="d-flex justify-content-center mt-3 login_container">
+	 			<input class="btn login_btn" type="submit" value="Login">
+	   		</div>
+
+		</form>
+{% endblock %}
+{% %}
+	<div class="mt-4">
+		<div class="d-flex justify-content-center links">
+			Forgot your info?<a href="{% url 'accounts:account-register' %}" class="ml-2">Email my info</a>
+		</div>
+	</div>
+{% endblock %}

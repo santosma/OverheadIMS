@@ -10,10 +10,10 @@ body {
 }
 
 .user_card {
-	width: 500px;
-	margin-top: auto;
+	width: 400px;
+	margin-top: 50px;
 	margin-bottom: auto;
-	background: var(--workplace-color);
+	color: red;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -28,4 +28,10 @@ body {
 
 .login_container {
 	padding: 0 2rem;
+}
+
+.login_btn {
+	width: 100%;
+	background: #f96300 ;
+	color: white;
 }
