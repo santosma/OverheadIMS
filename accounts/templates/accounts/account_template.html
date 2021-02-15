@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	<div class="container h-100">
+		<div class="d-flex justify-content-center h-100">
+			<div class="user_card">
+				<div class="d-flex justify-content-center">
+					{% block form_title %}
+					<p>form title</p>
+					{% endblock%}
+				</div>
+
+				<div class="d-flex justify-content-center form_container">
+					{% block account_form %}
+						<p>a form</p>
+					{% endblock %}
+				</div>
+
+				{{form.errors}}
+
+				<div class="mt-4">
+					<div class="d-flex justify-content-center links">	
+						{% block form_links %}
+							<p>link from login/register goes here</p>
+						{% endblock %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
